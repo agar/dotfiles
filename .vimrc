@@ -89,4 +89,11 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
-colorscheme wombat
+
+if has("gui_running")
+    set guifont=Monospace\ 8
+    set background=dark
+    colorscheme solarized
+else
+    colorscheme wombat
+endif
