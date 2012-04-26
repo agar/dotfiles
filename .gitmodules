@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/Vim-PHP-Stuff"]
 	path = .vim/bundle/Vim-PHP-Stuff
 	url = https://github.com/paulyg/Vim-PHP-Stuff.git
+[submodule ".vim/bundle/vim-twig"]
+	path = .vim/bundle/vim-twig
+	url = https://github.com/beyondwords/vim-twig
