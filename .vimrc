@@ -11,10 +11,10 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-set showcmd		 " Show (partial) command in status line.
+set showcmd         " Show (partial) command in status line.
 set autowrite       " Automatically save before commands like :next and :make
-set hidden		  " Hide buffers when they are abandoned
-"set mouse=a		" Enable mouse usage (all modes)
+set hidden          " Hide buffers when they are abandoned
+set mouse=nc        " Enable mouse usage (normal and command modes only)
 
 set encoding=utf-8
 set scrolloff=3
@@ -38,10 +38,10 @@ vnoremap / /\v
 
 set ignorecase      " Do case insensitive matching
 set smartcase       " Do smart case matching
-set gdefault		" Applies substitutions globally on lines
+set gdefault        " Applies substitutions globally on lines
 set showmatch       " Show matching brackets.
 set incsearch       " Incremental search
-set hlsearch		" Highlight search
+set hlsearch        " Highlight search
 
 " Clear search highlight with \<space>
 nnoremap <leader><space> :noh<cr>
@@ -64,8 +64,8 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
 "Invisible character colors
-highlight NonText guifg=#333333
-highlight SpecialKey guifg=#333333
+highlight NonText guifg=#222222
+highlight SpecialKey guifg=#222222
 
 " Disable the help key
 inoremap <F1> <ESC>
@@ -98,5 +98,5 @@ else
     set t_Co=256
     let g:solarized_termcolors=256
     set background=dark
-    colorscheme solarized 
+    colorscheme solarized
 endif
