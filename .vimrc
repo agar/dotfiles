@@ -1,5 +1,6 @@
 call pathogen#infect()
 
+
 filetype off
 filetype plugin indent on
 set nocompatible
@@ -29,8 +30,13 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set number
+
 "set relativenumber
+
+set undodir=~/.vim/undodir
 set undofile
+set undolevels=1000 "maximum number of changes that can be undone
+set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 
 " Use normal regexes for searching
 nnoremap / /\v
